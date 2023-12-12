@@ -18,7 +18,7 @@ const Post = () => {
 
         try {
             if (id) {
-                const response = await axios.get(`http://hn.algolia.com/api/v1/items/${id}`);
+                const response = await axios.get(`https://hn.algolia.com/api/v1/items/${id}`);
                 setData(response.data);
                 setDataChilds(response.data.children)
                 setLoading(false);
